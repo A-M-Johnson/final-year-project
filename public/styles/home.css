@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-size: 20px;
+    font-family: "Lexend Deca", "Noto Sans", Arial, sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: 1px;
+    scrollbar-color: green;
+}
+:root{
+    /*colors*/
+    --primary-color: #007bff;
+    --hero-background: #E5EBEC;
+    --color-white: #fff;
+    --text-color: #575757;
+    --hightlight: #0DFFAD;
+    --h1-color: #003C46;
+    --font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /*padding*/
+    --normal-padding: 1.5em;
+
+    /*width*/
+    --container-width: 90%;
+    --mobile-container-width: 90%;
+
+    /*font-sizes*/
+    --size: 1.5rem;
+    --weight: 200;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+*::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -1px;
+}
+p{
+    font-size: .8em;
+}
+a:link{
+    color: var(--color-white);
+}
+a:visited{
+    color: var(--color-white);
+}
+::selection{
+    background-color: var(--primary-color);
+}
+a:hover{
+    border-bottom: 2px solid var(--hightlight);
+}
+img{
+    width: 700px;
+}
+section{
+     padding-bottom: 3em;
+}
+ion-icon{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    background-color: #007bff;
+    max-width: 1600px;
+    padding: var(--normal-padding);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: [Logo] 300px [nav-links] 50% [Login] 30%;
+    padding-top: var(--normal-padding);
+    position: fixed;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+nav > ul{
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    gap: 2em;
+}
+header .Login{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--h1-color);
+}
+.line{
+    height: 2px;
+    width: 200px;
+    background: var(--primary-color);
+    margin-left: 4rem;
+}
+
+.hero{
+    padding-top: 8em;
+    background-color: var(--hero-background);
+    overflow: hidden;
+    font-family: "Lexend Deca", Noto Sans, Arial, sans-serif;
+}
+
+.hero .container .hero-message{
+    font-size: 1.5em;
+    color: var(--h1-color);
+}
+.hero .container .hero-message .highlight{
+    margin-top: 1rem;
+}
+.highlight-left, .highlight-right{
+    background-color: var(--primary-color);
+    padding: .3rem;
+    display: inline-block;
+    position: relative;
+    color: var(--color-white);
+}
+.highlight-left::before{
+    content: url('/Assets/pin.svg');
+    position: absolute;
+    background-position: top right;
+    left: -.7em;
+    top: -.6em;
+    width: 1em;
+    height: 2em;
+}
+.highlight-right::after{
+    content: url('/Assets/pin2.svg');
+    background-position: bottom left;
+    position: absolute;
+    right: -.3em;
+    top: .9em;
+    width: 1em;
+    height: 2em;
+}
+.features{
+    margin-bottom: 2em;
+}
+
+.feature-message h1{
+    font-weight: 500;
+}
+.students .container .student-message{
+    order: 2;
+}
+.students .container .student-image{
+    order: 1;
+}
+.integrity .container .integrity-message{
+    order: 2;
+}
+.integrity .container .integrity-image{
+    order: 1;
+}
+.stories{
+    background-color: var(--hero-background);
+    position: relative;
+}
+.stories .container{
+    align-items: center;
+    padding: 2rem;
+}
+.stories .line1{
+    position: absolute;
+    top: 10%;
+}
+.stories .story-message h1{
+    margin-bottom: 1.5rem;
+}
+.checker{
+    background-color:  #007bff;
+}
+.checker-container{
+    flex-direction: column;
+    color: white;
+}
+.checker-container .checker-message{
+    align-self: flex-start;
+    margin-top: 1.5rem;
+}
+.checker-container .checker-message h1{
+    font-size: 2rem;
+}
+.checker-container .checker-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.checker-container .checker-content .checker-features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    color: white;
+}
+.checker-container .checker-content .checker-features .features{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: .7rem;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.5, -0.19, 0.7, -0.11);
+}
+.checker-container .checker-content .checker-features .features:hover{
+    transform: translateY(-20%);
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;
+    border: 0;
+
+}
+.check
+.checker-container .checker-content .checker-features .features .text > h1{
+    font-size: 1.5rem;
+}
+.checker-container .checker-content .checker-features .features .text > p{
+    font-size: .5;
+}
+.difference{
+    background-color: var(--color-white);
+}
+.difference-container{
+    color: var(--h1-color);
+}
+.difference-container .difference-content{
+    gap: 2rem;
+}
+.difference-container .difference-content .difference-features{
+    color: var(--h1-color);
+    order: 2;
+}
+.difference-container .difference-content .difference-image{
+    order: 1;
+}
+.difference-container .difference-content .difference-features .features:hover{
+    box-shadow: none;
+    border: none;
+}
+footer{
+    background-color:  #007bff;
+}
+.footer-container{
+    padding: 2rem;
+    color: var(--color-white);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    font-family: 'Montserrat';
+}
+.footer-container .footer-links h3{
+    font-size: .7rem;
+    text-transform: capitalize;
+    margin-bottom: .7rem;
+}
+.footer-container .footer-links ul li{
+    font-size: .6rem;
+    margin-bottom: .4rem;
+}
+.footer-container .footer-links ul li a{
+    color: #e7f9ff98;
+}
+.footer-line{
+    height: 2px;
+    background-color: #e7f9ff98;
+    margin-bottom: 1rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}

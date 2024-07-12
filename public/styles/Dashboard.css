@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color:#007bff;
+    --white-color: white;
+    --green-color: green;
+    --red-color: #ff6565;
+    --lightgray-color: lightgray;
+}
+
+.dashboard-container{
+    margin: 2rem auto 0;
+    width: 80%;
+}
+
+thead{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+td{
+    padding: .7rem;
+    text-align: center;
+}
+
+tbody{
+    border: 1px solid var(--lightgray-color);
+}
+
+#table_btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.table_btn{
+    padding: .7rem;
+    color: var(--white-color);
+    width: 100px;
+}
+
+.table_btn:hover{
+    cursor: pointer;
+}
+
+.table_btn.apr{
+    background-color: var(--green-color);
+}
+
+.table_btn.rej{
+    background-color: var(--red-color);
+}
+
+.dashboard-container .export_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.export{
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.export.download{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.export:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.export.download:hover{
+    background-color: var(--secondary-color);
+}

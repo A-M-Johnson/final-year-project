@@ -1,0 +1,117 @@
+body{
+    background-color: #007bff;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container{
+    width: 40%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 2rem;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+   display: flex;
+   overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color:  rgb(30,144,255);
+    border: none;
+}
+select{
+    padding: .5rem;
+    border-radius: 5px;
+    font-family: 'montserrat';
+}
+.first{
+    flex-grow: 1;
+    background-color:  rgb(255,255,255);;
+    width: 50px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 0.3rem;
+}
+.header h4{
+    font-weight: Bold;
+    color:  rgb(45, 44, 44);
+}
+ span{
+    color:  rgb(30,144,255);
+}
+.header ion-icon{
+    font-size: 15px;
+    color:  rgb(30,144,255);
+}
+.login{
+   margin: 20px 20px;
+   padding: 10px;
+   color:rgb(45, 44, 44);
+}
+.login h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.login p{
+    font-size: 12px;
+    text-align: center;
+}
+.main-form{
+    padding: 10px;
+}
+.main-form .form-group{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.main-form label{
+    display: block;
+    margin-bottom: 7px;
+}
+input:focus{
+    outline: 1px solid  #007bff;
+    
+}
+.main-form input{
+    padding: .7rem;
+    
+}
+.main-form input[type="email"], input[type="password"], input[type="text"]{
+    width: 95%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.main-form input[type="button"]{
+    width: 100%;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main-form input::placeholder{
+    font-size: 15px;
+    font-family: 'montserrat', sans-serif;
+
+}
+.main-form input[type="button"]:hover{
+    background-color:  rgb(30,144,255);
+    color: #fff;
+}
+.first .footer{
+    margin-left: 20px;
+}
+.first .footer p{
+    font-size: 10px;
+}

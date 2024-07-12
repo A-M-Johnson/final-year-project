@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root{
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #f1f1f1;
+    --background-light-color-2: rgba(3, 127, 255, 0.3);
+    --white-color: #fff;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;
+
+    /* Width size */
+    --container-width: 85%;
+    --container-mobile-width: 95%;
+
+    /* Font size */
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.9rem;
+    --mobile-font-size: 1.8rem;
+
+    /* Button */
+    --border-radius: 0.25rem;
+    --padding: 1.5rem;
+    --primary-font-color: #0000f7;
+    --primary-btn-background-color: #fff;
+    --btn-accept-color: #28a745;
+    --btn-decline-color: #dc3545;
+
+    /* Transition */
+    --transition: all 0.3s ease;
+
+    /* Padding */
+    --padding: 1.5rem;
+    --mobile-padding: 1rem;;
+}
+body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+button{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--primary-font-color);
+    background-color: var(--primary-btn-background-color);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+button.upload {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--primary-btn-background-color);
+    background-color: var(--primary-font-color);
+    border: none;
+    border-radius: var(--border-radius);
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    text-align: center;
+}
+
+ion-icon{
+    font-size: 1.5rem;
+
+}
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile a{
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    gap: .3rem;
+}
+.container .container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+    background-color: var(--white-color);
+    margin-top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+.container .container-content .content{
+    /* text-align: center; */
+    padding: 1rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .container-content .content ion-icon{
+   margin-bottom: 1rem;
+   font-size: 4rem;
+   color: var(--primary-font-color);
+}
+.container .container-content .primary-btn{
+    padding: 1rem 5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    cursor: pointer;
+    /* margin-top: 1rem;
+     */
+    transition: var(--transition);
+}
+.container .container-content .primary-btn:hover{
+    background-color: #0008ff9c;
+}
+/* input[type="file"]{
+    display: none;
+} */
+#dropZone {
+    height: max-content;
+    border: 2px dashed #1201ff;
+    padding: 10px;
+    text-align: center;
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 8px;
+    text-align: left;
+    margin: 0;
+  }
+th {
+    background-color: lightgray;
+  }
+.container .container-content .feedback a{
+    color: var(--primary-color);
+}
+.container .container-content .feedback{
+    position: absolute;
+    color: var(--primary-color);
+    text-decoration: underline;
+    bottom: 5%;
+    right: 2%;
+}
+
+.upload_item {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #99999949;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+}
